@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;600&display=swap')
+
+*
+    font-family: 'Inter', sans-serif
+    box-sizing: border-box
+
+$txt_col: #FFFFFF
+$gold: #FFC225
+
+body
+    background-color: #212E40
+    padding: 0
+    margin: 0
+
+.container
+    padding: 0 10px
+    max-width: 1300px
+    margin: 0 auto
+
+.main_container
+    padding: 0 10px
+    max-width: 1500px
+    margin: 0 auto
+
+.main_bg
+    background-image: url('../../img/main_bg.jpg')
+    background-repeat: no-repeat
+    background-position: top center
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+
+.navigation
+    padding-left: 0
+    list-style-type: none
+    position: absolute
+    top: 300px
+    z-index: 2
+    &__item
+        margin-bottom: 40px
+        font-weight: 400
+        font-size: 20px
+    &__link
+        color: $txt_col
+        text-decoration: none
+        padding-bottom: 5px
+        &:hover
+            border-bottom: 2px solid $gold
+.header
+    padding-top: 10px
+    padding-bottom: 10px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_logo
+        color: $txt_col
+        font-weight: 300
+        font-size: 30px
+        text-decoration: none
+        span
+            color: $gold
+        &__title
+            font-weight: 200
+            font-size: 15px
+            margin: 0px
+    &_contacts
+        transition: 0.5s all
+        position: relative
+        fill: $txt_col
+        color: $txt_col
+        display: flex
+        align-items: center
+        flex-direction: column
+        &__phone
+            font-weight: 300
+            font-size: 25px
+        &__img
+            width: 45px
+            height: 30px
+            padding-right: 15px
+        &:hover
+            fill: $gold
+            color: $gold
+        &__list
+            position: absolute
+            top: 30px
+            left: 5px
+            list-style-type: none
+            display: none
+            :first-child
+                margin-top: 10px
+        &:hover .header_contacts__list
+            display: block
+        &__item 
+            padding-bottom: 15px
+            a
+                font-weight: 500
+                font-size: 20px
+                color: $txt_col
+                text-decoration: none
+        &__num
+            display: flex
+            align-items: center
+        &__desc
+            padding-left: 20px
+            font-weight: 200
+            font-size: 15px
+.main
+    margin-top: 200px
+    // padding-bottom: 40px
+    min-height: 55vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    transition: 0.5s all
+    position: relative
+    &_adres
+        color: $txt_col
+        text-decoration: none
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        position: absolute
+        bottom: 0
+        right: 0
+        span
+            padding-bottom: 10px
+            font-weight: 400
+            font-size: 20px
+.persona
+    color: $gold
+.arrow
+    background: linear-gradient(180deg, rgba(33,46,64,0) 0%, rgba(33,46,64,1) 100%)
+    &__item
+
+.burger-menu__control
+    display: none
