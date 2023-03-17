@@ -39,6 +39,9 @@ body {
   top: 300px;
   z-index: 2;
 }
+.navigation__phone {
+  display: none;
+}
 .navigation__item {
   margin-bottom: 40px;
   font-weight: 400;
@@ -175,19 +178,23 @@ body {
   .header_logo {
     padding-bottom: 20px;
   }
-  .header_contacts__img {
+  .header_contacts {
     display: none;
-  }
-  .header_contacts__desc {
-    display: none;
-  }
-  .header_contacts__phone {
-    font-size: 20px;
   }
   .navigation {
-    top: 200px;
+    position: relative;
+    top: 100px;
+  }
+  .navigation__phone {
+    padding-top: 25px;
+    display: block;
+    font-size: 25px;
   }
   .arrow {
     display: none;
+  }
+  .main {
+    margin: 0;
+    min-height: 25vh;
   }
 }/*# sourceMappingURL=main.css.map */
