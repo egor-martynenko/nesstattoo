@@ -190,6 +190,9 @@ body {
     display: block;
     font-size: 25px;
   }
+  .navigation__link_phone {
+    color: #FFC225;
+  }
   .arrow {
     display: none;
   }
