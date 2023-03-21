@@ -22,7 +22,7 @@ body
     max-width: 1500px
     margin: 0 auto
 
-.main_bg
+.main
     background-image: url('../../img/main_bg.jpg')
     background-repeat: no-repeat
     background-position: top center
@@ -30,6 +30,8 @@ body
     -moz-background-size: cover
     -o-background-size: cover
     background-size: cover
+    height: 100vh
+    position: relative
 
 .navigation
     padding-left: 0
@@ -108,7 +110,7 @@ body
             padding-left: 20px
             font-weight: 200
             font-size: 15px
-.main
+.contact
     margin-top: 200px
     // padding-bottom: 40px
     min-height: 55vh
@@ -133,8 +135,10 @@ body
 .persona
     color: $gold
 .arrow
+    display: block
+    position: absolute
+    bottom: 0
     background: linear-gradient(180deg, rgba(33,46,64,0) 0%, rgba(33,46,64,1) 100%)
-    &__item
-
+    width: 100vw
 .burger-menu__control
     display: none
