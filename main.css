@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #212E40;
+  background-color: #05080D;
   padding: 0;
   margin: 0;
 }
@@ -16,14 +16,8 @@ body {
   margin: 0 auto;
 }
 
-.main_container {
-  padding: 0 10px;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
 .main {
-  background-image: url("../../img/main_bg.jpg");
+  background-image: url("../img/main_bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   -webkit-background-size: cover;
@@ -162,16 +156,70 @@ body {
   color: #FFC225;
 }
 
-.arrow {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  background: linear-gradient(180deg, rgba(33, 46, 64, 0) 0%, rgb(33, 46, 64) 100%);
-  width: 100vw;
+.studia__title {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 45px;
+}
+.studia__content {
+  display: flex;
+  align-items: center;
+}
+.studia__content_img {
+  width: 557px;
+  transform: translateX(10px);
+}
+.studia__content_about {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+}
+.studia__content_about span {
+  padding-top: 1vh;
+}
+.studia__content_about a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #FFC225;
 }
 
-.burger-menu__control {
-  display: none;
+.master__title {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 45px;
+}
+.master__content {
+  display: flex;
+  align-items: center;
+}
+.master__content_img {
+  height: 550px;
+  transform: translateX(-10px);
+}
+.master__content_about {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 30px;
+}
+.master__content_about span {
+  padding-top: 1vh;
 }
 
 @media (max-width: 500px) {
@@ -199,9 +247,6 @@ body {
   }
   .navigation__link_phone {
     color: #FFC225;
-  }
-  .arrow {
-    display: none;
   }
   .contact {
     margin: 0;
