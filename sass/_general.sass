@@ -75,6 +75,7 @@ body
         display: flex
         align-items: center
         flex-direction: column
+        cursor: pointer
         &__phone
             font-weight: 300
             font-size: 25px
@@ -205,9 +206,149 @@ body
     &__content
         display: grid
         grid-template-columns: repeat(4, 1fr)
-        grid-template-rows: repeat(4, 1fr)
+        grid-template-rows: repeat(3, 1fr)
         gap: 0px 0px
-        &__img
+        &_img
+            position: relative
+        &_info
+            position: absolute
+            background-color: rgba(5, 8, 13, 0.75)
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            opacity: 0
+            transition: 0.5s all
+            &:hover
+                opacity: 1
+            &_txt
+                color: $txt_col
+                font-weight: 400
+                font-size: 24px
+                text-align: center
+                margin-top: 50%
+                transform: translateY(-50%)
+                & span
+                    color: $gold
+                    line-height: 80px
+
 .image
     width: 100%
     height: 100%
+
+
+.feedback
+    color: $txt_col
+    &__group
+        list-style-type: none
+        padding-inline-start: 0px
+        margin-top: 50px
+        position: relative
+    &__item
+        background-color: rgba(255,255,255,.3)
+        border-radius: 20px
+        padding: 20px
+        &_head
+            display: flex
+            justify-content: start
+            align-items: center
+            & span
+                margin-left: 10px
+        &_content
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin: 15px 0
+            & span
+                margin-left: 15px
+        &_footer
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &__link
+        color: $txt_col
+        text-decoration: none
+        display: flex
+        flex-direction: column
+    &__img
+        border-radius: 50%
+        max-height: 150px
+    &__item_content
+        display: flex
+
+.slick-slide
+    margin: 0 20px
+
+.sliсk-arrow
+
+.slick-next, .slick-prev
+    position: absolute
+    border: none
+    background: none
+    cursor: pointer
+    font-size: 0
+    width: 35px
+    height: 35px    
+.slick-prev
+    top: -15%
+    right: 5%
+    background: url('../img/prev.svg') 0 0 no-repeat
+.slick-next
+    top: -15%
+    right: 0
+    background: url('../img/next.svg') 0 0 no-repeat
+
+.slick-dots
+    margin-top: 10px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-inline-start: 0px
+.slick-active
+    
+.slick-dots li 
+    list-style: none
+    margin: 0 5px
+    &:hover
+.slick-dots li  button 
+    font-size: 0
+    line-height: 0
+    width: 10px
+    height: 10px
+    padding: 5px
+    cursor: pointer
+    border: 0
+    outline: none
+    background: $txt_col
+    border-radius: 50%
+    transition: 0.5s all
+    &:hover
+        background: rgba(255,194,37,.7)
+    
+.slick-dots li.slick-active button
+    background-color: rgba(255,194,37,1)
+
+.contacts
+    position: relative
+    &__info
+        padding: 100px 25px
+        position: absolute
+        width: 500px
+        height: 80%
+        top: 0
+        left: 0
+        background-color: rgba(5,8,13,.85)
+        &_title
+            color: $gold
+            font-weight: 300
+            font-size: 20px
+            margin-top: 40px
+    &__adres
+        color: $txt_col
+        width:100%
+        font-weight: 200
+        font-size: 20px
+        text-decoration: none
+        line-height: 1.5
+    &__item
+        margin-top: 25px

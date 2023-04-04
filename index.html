@@ -7,6 +7,7 @@
     <title>Тату студия Сергиев Посад</title>
     <link rel="shortcut icon" href="dist/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
@@ -38,8 +39,8 @@
                     <li class="navigation__item"><a href="#studia" class="navigation__link">О студии</a></li>
                     <li class="navigation__item"><a href="#master" class="navigation__link">Мастер</a></li>
                     <li class="navigation__item"><a href="#portfolio" class="navigation__link">Портфолио</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Услуги</a></li>
-                    <li class="navigation__item"><a href="" class="navigation__link">Отзывы</a></li>
+                    <li class="navigation__item"><a href="#feedback" class="navigation__link">Отзывы</a></li>
+                    <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
                     <li class="navigation__item navigation__phone"><a href="" class="navigation__link navigation__link_phone">+7 991 224 38 18</a></li>
                 </ul>
 
@@ -124,40 +125,223 @@
             <div class="portfolio__content">
                 <div class="portfolio__content_img">
                     <img class="image" src="dist/img/1.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/2.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/3.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/4.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/5.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/6.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/7.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/8.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
+                    <img class="image" src="dist/img/9.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
                 </div>
                 <div class="portfolio__content_img">
-                    <img class="image" src="dist/img/1.jpg" alt="">
-                </div>             
+                    <img class="image" src="dist/img/10.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
+                </div>           
+                <div class="portfolio__content_img">
+                    <img class="image" src="dist/img/11.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
+                </div>
+                <div class="portfolio__content_img">
+                    <img class="image" src="dist/img/12.jpg" alt="">
+                    <div class="portfolio__content_info">
+                        <p class="portfolio__content_info_txt">4 часа<br><span>4000 руб</span></p>
+                    </div>
+                </div>     
             </div>
-
     </section>
-    
+    <section class="feedback" id="feedback">
+        <div class="container">
+            <h2 class="feedback__title title">Отзывы</h2>
+            <ul class="feedback__group">
+                <li class="feedback__item">
+                    <a href="#" class="feedback__link">
+                        <div class="feedback__item_head">
+                            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.5 1.4375C6.73641 1.4375 2.875 5.29891 2.875 10.0625C2.875 12.4434 3.83971 14.5993 5.39997 16.1599C6.96066 17.7215 10.6375 19.9813 10.8531 22.3531C10.8855 22.7088 11.1429 23 11.5 23C11.8571 23 12.1145 22.7088 12.1469 22.3531C12.3625 19.9813 16.0393 17.7215 17.6 16.1599C19.1603 14.5993 20.125 12.4434 20.125 10.0625C20.125 5.29891 16.2636 1.4375 11.5 1.4375Z" fill="#FF4433"/>
+                                <path d="M11.5 13.0814C13.1672 13.0814 14.5187 11.7299 14.5187 10.0627C14.5187 8.39548 13.1672 7.04395 11.5 7.04395C9.83281 7.04395 8.48126 8.39548 8.48126 10.0627C8.48126 11.7299 9.83281 13.0814 11.5 13.0814Z" fill="white"/>
+                            </svg>
+                            <span>Яндекс Карты</span>   
+                        </div>
+                        <div class="feedback__item_content">
+                            <img src="dist/img/feed_1.jpg" class="feedback__img" alt="photo">
+                            <span>Посетил этот тату салон, приятно выслушали пожелание все обговорили, примерили как это будет выглядеть и потом сделали быстро качественно доволен как удав, атмосфера в помещение приятная, результат радует глаз пока-что получилось, жду следующего сеанса))</span>
+                        </div>
+                        <div class="feedback__item_footer">
+                            <span class="name">Борис Бадаев</span>
+                            <span class="date">3 сентября 2021</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="feedback__item"><a href="#" class="feedback__link">
+                    <div class="feedback__item_head">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 1.4375C6.73641 1.4375 2.875 5.29891 2.875 10.0625C2.875 12.4434 3.83971 14.5993 5.39997 16.1599C6.96066 17.7215 10.6375 19.9813 10.8531 22.3531C10.8855 22.7088 11.1429 23 11.5 23C11.8571 23 12.1145 22.7088 12.1469 22.3531C12.3625 19.9813 16.0393 17.7215 17.6 16.1599C19.1603 14.5993 20.125 12.4434 20.125 10.0625C20.125 5.29891 16.2636 1.4375 11.5 1.4375Z" fill="#FF4433"/>
+                            <path d="M11.5 13.0814C13.1672 13.0814 14.5187 11.7299 14.5187 10.0627C14.5187 8.39548 13.1672 7.04395 11.5 7.04395C9.83281 7.04395 8.48126 8.39548 8.48126 10.0627C8.48126 11.7299 9.83281 13.0814 11.5 13.0814Z" fill="white"/>
+                        </svg>
+                        <span>Яндекс Карты</span>   
+                    </div>
+                    <div class="feedback__item_content">
+                        <img src="dist/img/feed_1.jpg" class="feedback__img" alt="photo">
+                        <span>Посетил этот тату салон, приятно выслушали пожелание все обговорили, примерили как это будет выглядеть и потом сделали быстро качественно доволен как удав, атмосфера в помещение приятная, результат радует глаз пока-что получилось, жду следующего сеанса))</span>
+                    </div>
+                    <div class="feedback__item_footer">
+                        <span class="name">Борис Бадаев</span>
+                        <span class="date">3 сентября 2021</span>
+                    </div>
+                </a></li>
+                <li class="feedback__item"><a href="#" class="feedback__link">
+                    <div class="feedback__item_head">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 1.4375C6.73641 1.4375 2.875 5.29891 2.875 10.0625C2.875 12.4434 3.83971 14.5993 5.39997 16.1599C6.96066 17.7215 10.6375 19.9813 10.8531 22.3531C10.8855 22.7088 11.1429 23 11.5 23C11.8571 23 12.1145 22.7088 12.1469 22.3531C12.3625 19.9813 16.0393 17.7215 17.6 16.1599C19.1603 14.5993 20.125 12.4434 20.125 10.0625C20.125 5.29891 16.2636 1.4375 11.5 1.4375Z" fill="#FF4433"/>
+                            <path d="M11.5 13.0814C13.1672 13.0814 14.5187 11.7299 14.5187 10.0627C14.5187 8.39548 13.1672 7.04395 11.5 7.04395C9.83281 7.04395 8.48126 8.39548 8.48126 10.0627C8.48126 11.7299 9.83281 13.0814 11.5 13.0814Z" fill="white"/>
+                        </svg>
+                        <span>Яндекс Карты</span>   
+                    </div>
+                    <div class="feedback__item_content">
+                        <img src="dist/img/feed_1.jpg" class="feedback__img" alt="photo">
+                        <span>Посетил этот тату салон, приятно выслушали пожелание все обговорили, примерили как это будет выглядеть и потом сделали быстро качественно доволен как удав, атмосфера в помещение приятная, результат радует глаз пока-что получилось, жду следующего сеанса))</span>
+                    </div>
+                    <div class="feedback__item_footer">
+                        <span class="name">Борис Бадаев</span>
+                        <span class="date">3 сентября 2021</span>
+                    </div>
+                </a></li>
+                <li class="feedback__item"><a href="#" class="feedback__link">
+                    <div class="feedback__item_head">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 1.4375C6.73641 1.4375 2.875 5.29891 2.875 10.0625C2.875 12.4434 3.83971 14.5993 5.39997 16.1599C6.96066 17.7215 10.6375 19.9813 10.8531 22.3531C10.8855 22.7088 11.1429 23 11.5 23C11.8571 23 12.1145 22.7088 12.1469 22.3531C12.3625 19.9813 16.0393 17.7215 17.6 16.1599C19.1603 14.5993 20.125 12.4434 20.125 10.0625C20.125 5.29891 16.2636 1.4375 11.5 1.4375Z" fill="#FF4433"/>
+                            <path d="M11.5 13.0814C13.1672 13.0814 14.5187 11.7299 14.5187 10.0627C14.5187 8.39548 13.1672 7.04395 11.5 7.04395C9.83281 7.04395 8.48126 8.39548 8.48126 10.0627C8.48126 11.7299 9.83281 13.0814 11.5 13.0814Z" fill="white"/>
+                        </svg>
+                        <span>Яндекс Карты</span>   
+                    </div>
+                    <div class="feedback__item_content">
+                        <img src="dist/img/feed_1.jpg" class="feedback__img" alt="photo">
+                        <span>Посетил этот тату салон, приятно выслушали пожелание все обговорили, примерили как это будет выглядеть и потом сделали быстро качественно доволен как удав, атмосфера в помещение приятная, результат радует глаз пока-что получилось, жду следующего сеанса))</span>
+                    </div>
+                    <div class="feedback__item_footer">
+                        <span class="name">Борис Бадаев</span>
+                        <span class="date">3 сентября 2021</span>
+                    </div>
+                </a></li>
+                <li class="feedback__item"><a href="#" class="feedback__link">
+                    <div class="feedback__item_head">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 1.4375C6.73641 1.4375 2.875 5.29891 2.875 10.0625C2.875 12.4434 3.83971 14.5993 5.39997 16.1599C6.96066 17.7215 10.6375 19.9813 10.8531 22.3531C10.8855 22.7088 11.1429 23 11.5 23C11.8571 23 12.1145 22.7088 12.1469 22.3531C12.3625 19.9813 16.0393 17.7215 17.6 16.1599C19.1603 14.5993 20.125 12.4434 20.125 10.0625C20.125 5.29891 16.2636 1.4375 11.5 1.4375Z" fill="#FF4433"/>
+                            <path d="M11.5 13.0814C13.1672 13.0814 14.5187 11.7299 14.5187 10.0627C14.5187 8.39548 13.1672 7.04395 11.5 7.04395C9.83281 7.04395 8.48126 8.39548 8.48126 10.0627C8.48126 11.7299 9.83281 13.0814 11.5 13.0814Z" fill="white"/>
+                        </svg>
+                        <span>Яндекс Карты</span>   
+                    </div>
+                    <div class="feedback__item_content">
+                        <img src="dist/img/feed_1.jpg" class="feedback__img" alt="photo">
+                        <span>Посетил этот тату салон, приятно выслушали пожелание все обговорили, примерили как это будет выглядеть и потом сделали быстро качественно доволен как удав, атмосфера в помещение приятная, результат радует глаз пока-что получилось, жду следующего сеанса))</span>
+                    </div>
+                    <div class="feedback__item_footer">
+                        <span class="name">Борис Бадаев</span>
+                        <span class="date">3 сентября 2021</span>
+                    </div>
+                </a></li>
+                <li class="feedback__item"><a href="#" class="feedback__link">
+                    <div class="feedback__item_head">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 1.4375C6.73641 1.4375 2.875 5.29891 2.875 10.0625C2.875 12.4434 3.83971 14.5993 5.39997 16.1599C6.96066 17.7215 10.6375 19.9813 10.8531 22.3531C10.8855 22.7088 11.1429 23 11.5 23C11.8571 23 12.1145 22.7088 12.1469 22.3531C12.3625 19.9813 16.0393 17.7215 17.6 16.1599C19.1603 14.5993 20.125 12.4434 20.125 10.0625C20.125 5.29891 16.2636 1.4375 11.5 1.4375Z" fill="#FF4433"/>
+                            <path d="M11.5 13.0814C13.1672 13.0814 14.5187 11.7299 14.5187 10.0627C14.5187 8.39548 13.1672 7.04395 11.5 7.04395C9.83281 7.04395 8.48126 8.39548 8.48126 10.0627C8.48126 11.7299 9.83281 13.0814 11.5 13.0814Z" fill="white"/>
+                        </svg>
+                        <span>Яндекс Карты</span>   
+                    </div>
+                    <div class="feedback__item_content">
+                        <img src="dist/img/feed_1.jpg" class="feedback__img" alt="photo">
+                        <span>Посетил этот тату салон, приятно выслушали пожелание все обговорили, примерили как это будет выглядеть и потом сделали быстро качественно доволен как удав, атмосфера в помещение приятная, результат радует глаз пока-что получилось, жду следующего сеанса))</span>
+                    </div>
+                    <div class="feedback__item_footer">
+                        <span class="name">Борис Бадаев</span>
+                        <span class="date">3 сентября 2021</span>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <h2 class="contacts__title title">Контакты</h2>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa2e32158d9bc27e338fb603e02f3b5241aa4ffb962454298b2d4e315a0f5fc07&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=falce"></script>
+        <div class="contacts__info">
+            <div class="contacts__item">
+            <span class="contacts__info_title">Адрес:</span>
+            <a href="#" class="contacts__adres">
+                <span>Сергиев Посад, пр. Красной Армии, 142</span>
+                <span class="persona">Persona by D&I</span>
+            </a>
+            </div>
+            <div class="contacts__item">
+            <span class="contacts__info_title">Телефон:</span>
+            <a href="#" class="contacts__adres">
+                <span>+7 (991) 224 - 38 18</span>
+            </a>
+            </div>
+            <div class="contacts__item">
+            <span class="contacts__info_title">График работы:</span>
+            <a href="#" class="contacts__adres">
+                <span>Работаем без выходных <br>с 11:00 до 19:00</span>
+            </a>
+            </div>
+            <div class="contacts__item">
+                <span class="contacts__info_title">Почта:</span>
+                <a href="#" class="contacts__adres">
+                    <span>persona.anastasia@yandex.ru</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="dist/script/index.js"></script>
 </body>
 </html>
