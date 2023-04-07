@@ -481,6 +481,9 @@ body {
     border-radius: 10px;
     padding: 10px;
   }
+  .studia__title {
+    z-index: 10;
+  }
   .master__content {
     display: flex;
     flex-direction: column-reverse;
