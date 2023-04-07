@@ -487,7 +487,7 @@ body {
     flex-direction: column-reverse;
   }
   .master__content_img {
-    height: 550px;
+    width: 100%;
     transform: translateX(0px);
     z-index: 3;
   }
@@ -527,8 +527,8 @@ body {
   .feedback__item_content span {
     margin: 0 auto;
   }
-  .slick-next, .slick-prev {
-    display: none;
+  .slick-prev, .slick-next {
+    opacity: 0;
   }
   .contacts {
     position: relative;

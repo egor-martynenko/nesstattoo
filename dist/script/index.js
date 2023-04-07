@@ -9,6 +9,7 @@ $(document).ready(function(){
                 breakpoint: 500,
                 settings: {
                     slidesToShow: 1,
+                    // arrows: falce
                 }
             }
         ]
