@@ -402,8 +402,8 @@ body {
   padding: 100px 25px;
   position: absolute;
   width: 500px;
-  height: 80%;
-  top: 0;
+  height: 450px;
+  bottom: 0;
   left: 0;
   background-color: rgba(5, 8, 13, 0.85);
 }
@@ -428,6 +428,12 @@ body {
 @media (max-width: 500px) {
   .main_container {
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  .main {
+    max-width: 100%;
+  }
+  .container {
+    width: 100%;
   }
   .header {
     flex-direction: column;
@@ -454,5 +460,16 @@ body {
   .contact {
     margin: 0;
     min-height: 45vh;
+  }
+  .studia__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .studia__content_img {
+    width: 100%;
+  }
+  .master__content {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
