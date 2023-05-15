@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    letter-spacing: .1rem;
+}
+    
+:root {
+    --white: #fff;
+    --black: #111;
+    --pink: #e701dd;
+  }
+
+$txt_col: #FFFFFF;
+$gold: #FFC225;
+
+body {
+    background-color: #06090E;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url('../img/main_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+} 
+
+.container{
+    padding: 0 10px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    color: $txt_col;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 66px;
+    margin-top: 50px;
+}
+
+.contacts_links {
+    & svg{
+        margin: 20px 20px 20px 0;
+    }
+    & svg:first-child{
+        width: 35px;
+        height: 37px;
+        & path{
+            fill: $txt_col;
+        }
+    } 
+    & svg:first-child:hover{
+        padding-bottom: 5px;
+        border-bottom: 2px solid $gold;
+    }
+
+    & svg:nth-child(2n){
+        width: 42px;
+        height: 37px;
+        & path{
+            fill: $txt_col;
+        }
+    }
+    & svg:nth-child(2n):hover{
+        padding-bottom: 5px;
+        border-bottom: 2px solid $gold;
+    }
+    
+    & svg:nth-child(3n){
+        width: 35px;
+        height: 35px;
+        & path{
+            fill: $txt_col;
+        }
+    }
+    & svg:nth-child(3n):hover{
+        padding-bottom: 5px;
+        border-bottom: 2px solid $gold;
+    }
+    
+}
+
+

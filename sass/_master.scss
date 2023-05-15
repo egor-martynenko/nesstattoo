@@ -1,0 +1,42 @@
+.master{
+    &_content{
+         position: relative;
+    }
+    &_photo{
+        &-persona{
+            position: absolute;
+            top: -70px;
+            left: 0;
+            width: 716px;
+            height: 450px;
+            z-index: 2;
+        }
+        &-master{
+            left: 15%;
+            bottom: -70px;
+            position: absolute;
+            width: 455px;
+            height: 571px;
+            z-index: 2;
+        }
+    }
+    &_text{
+        position: relative;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: var(--white);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;   
+        padding: 20px 20px 20px 55% ;
+        margin: 100px 0px 100px 40px;
+    } 
+    &_text span{
+        color: #FFC225;
+    }
+    
+}
