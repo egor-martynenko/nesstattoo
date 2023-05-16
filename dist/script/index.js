@@ -74,3 +74,50 @@ window.addEventListener('DOMContentLoaded', function(){
         }
     });
 });
+
+$(document).ready(function(){
+    $('.feedback__group').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true,
+        responsive:[
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1, 
+                }
+            }
+        ]
+    });
+    
+});
+$('#lightSlider').lightSlider({
+    gallery: true,
+    item: 1,
+    loop:true,
+    slideMargin: 0,
+    thumbItem: 9
+});
+
+function myFunction1(smallImg1){
+    var fullImg1 = document.getElementById("imageBox1");
+    fullImg1.src = smallImg1.src;
+}
+
+function myFunction2(smallImg2){
+    var fullImg2 = document.getElementById("imageBox2");
+    fullImg2.src = smallImg2.src;
+}
+function myFunction3(smallImg3){
+    var fullImg3 = document.getElementById("imageBox3");
+    fullImg3.src = smallImg3.src;
+}
+function myFunction4(smallImg4){
+    var fullImg4 = document.getElementById("imageBox4");
+    fullImg4.src = smallImg4.src;
+}
+function myFunction5(smallImg5){
+    var fullImg5 = document.getElementById("imageBox5");
+    fullImg5.src = smallImg5.src;
+}

@@ -334,11 +334,12 @@ body {
 .content .info {
   margin: 0 auto;
   min-height: 580px;
+  position: relative;
 }
 
 .content .info-header {
   width: 100%;
-  height: 50px;
+  height: 40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -350,9 +351,12 @@ body {
 
 .content .info-header-tab {
   color: #FFFFFF;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 30px;
   cursor: pointer;
+}
+.content .info-header-tab:hover {
+  border-bottom: 2px solid #FFC225;
 }
 
 .content .info-header-tab:after {
@@ -383,6 +387,7 @@ body {
 
 .content .info-tabcontent .description-title {
   font-size: 34px;
+  font-weight: 300;
   color: #FFFFFF;
 }
 
@@ -402,7 +407,7 @@ body {
   padding-right: 20px;
 }
 
-.content .info-tabcontent .photo {
+.content .info-tabcontent .photogallery {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -413,8 +418,9 @@ body {
   align-items: center;
 }
 
-.content .info-tabcontent .photo img {
+.content .info-tabcontent .photogallery .hotogallery {
   max-width: 350px;
+  z-index: 3;
 }
 
 .content .info .hide {
@@ -426,4 +432,196 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.decor {
+  position: relative;
+  height: 200px;
+  z-index: 2;
+  border-top: 2px solid #FFC225;
+  border-bottom: 2px solid #FFC225;
+  transform: translateY(-80px);
+}
+.decor img {
+  width: 100%;
+  height: 100%;
+}
+
+.photogallery {
+  z-index: 3;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -35%);
+  position: absolute;
+}
+
+.img-container img {
+  height: 510px;
+  margin: 10px;
+}
+
+.photogallery-small-img img {
+  height: 120px;
+  margin: 10px 0;
+  cursor: pointer;
+  display: block;
+  opacity: 0.6;
+}
+.photogallery-small-img img:hover {
+  opacity: 1;
+}
+
+.small_img1 {
+  background-color: #06090E;
+}
+
+.feedback {
+  color: #FFFFFF;
+  margin-top: -100px;
+}
+.feedback__group {
+  list-style-type: none;
+  padding-inline-start: 0px;
+  margin-top: 50px;
+  position: relative;
+}
+.feedback__item {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+}
+.feedback__item_head {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.feedback__item_head span {
+  margin-left: 10px;
+}
+.feedback__item_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+.feedback__item_content span {
+  margin-left: 15px;
+}
+.feedback__item_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedback__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.feedback__img {
+  border-radius: 50%;
+  max-height: 150px;
+}
+.feedback__item_content {
+  display: flex;
+}
+
+.feedback__title {
+  margin-bottom: 0px;
+}
+
+.slick-slide {
+  margin: 0 20px;
+}
+
+.slick-next, .slick-prev {
+  position: absolute;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0;
+  width: 35px;
+  height: 35px;
+}
+
+.slick-prev {
+  top: -15%;
+  right: 5%;
+  background: url("../img/prev.svg") 0 0 no-repeat;
+}
+
+.slick-next {
+  top: -15%;
+  right: 0;
+  background: url("../img/next.svg") 0 0 no-repeat;
+}
+
+.slick-dots {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+ul.slick-dots {
+  list-style: none;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  background: #FFFFFF;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+.slick-dots li button:hover {
+  background: rgba(255, 194, 37, 0.7);
+}
+
+.slick-dots li.slick-active button {
+  background-color: rgb(255, 194, 37);
+}
+
+.contacts {
+  position: relative;
+  margin-top: -30px;
+}
+.contacts__info {
+  padding: 100px 25px;
+  position: absolute;
+  width: 500px;
+  height: 450px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(5, 8, 13, 0.85);
+}
+.contacts__info_title {
+  color: #FFC225;
+  font-weight: 300;
+  font-size: 20px;
+  margin-top: 40px;
+}
+.contacts__adres {
+  color: #FFFFFF;
+  width: 100%;
+  font-weight: 200;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+.contacts__item {
+  margin-top: 25px;
 }/*# sourceMappingURL=main.css.map */

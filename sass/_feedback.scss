@@ -1,0 +1,123 @@
+.feedback {
+    color: $txt_col;
+    margin-top: -100px;
+    &__group{
+        list-style-type: none;
+        padding-inline-start: 0px;
+        margin-top: 50px;
+        position: relative;
+    }
+    &__item{
+        background-color: rgba(255,255,255,.3);
+        border-radius: 20px;
+        padding: 20px;
+        &_head{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            & span{
+                margin-left: 10px;
+            }   
+        }  
+        &_content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+            & span{
+                margin-left: 15px;
+            }     
+        }  
+        &_footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            
+    } 
+    &__link{
+        color: $txt_col;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    } 
+    &__img{
+        border-radius: 50%;
+        max-height: 150px;
+    }  
+    &__item_content{
+        display: flex;
+    }   
+}
+
+.feedback__title{
+    margin-bottom: 0px;
+}
+.slick-slide{
+    margin: 0 20px;
+}
+
+.slick-next, .slick-prev{
+    position: absolute;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0;
+    width: 35px;
+    height: 35px;
+}
+      
+.slick-prev{
+    top: -15%;
+    right: 5%;
+    background: url('../img/prev.svg') 0 0 no-repeat;
+}
+.slick-next{
+    top: -15%;
+    right: 0;
+    background: url('../img/next.svg') 0 0 no-repeat;
+}
+
+
+    
+
+.slick-dots{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline-start: 0px;
+}
+    
+.slick-dots li {
+    list-style: none;
+    margin: 0 5px;
+}
+ul.slick-dots{
+    list-style:none;
+}
+
+.slick-dots li  button {
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    background: $txt_col;
+    border-radius: 50%;
+    transition: 0.5s all;
+    &:hover{
+        background: rgba(255,194,37,.7);
+    }
+        
+}
+.slick-dots li.slick-active button{
+    background-color: rgba(255,194,37,1);
+}
+    
+
+    
