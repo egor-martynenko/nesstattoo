@@ -1,12 +1,29 @@
+// Найти все ссылки начинающиеся на #
+const anchors = document.querySelectorAll('a[href^="#"]')
+
+// Цикл по всем ссылкам
+for(let anchor of anchors) {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault() // Предотвратить стандартное поведение ссылок
+    // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+    const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body'
+    // Плавная прокрутка до элемента с id = href у ссылки
+    document.querySelector(goto).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    })
+  })
+}
+
 let link = document.querySelector(".link");
-let pink = document.querySelector(".pink");
+let circle = document.querySelector(".circle");
 
 let hoverTL = gsap.timeline();
 hoverTL.pause();
 
 // from, to, fromTo Tweens
-hoverTL.to(pink, {width: "calc(100% + 1.2em)", ease: "Elastic.easeOut(0.25)", duration: 0.5});
-hoverTL.to(pink, {width: "2em", left: "calc(100% - 2.5em)", ease: "Elastic.easeOut(0.4)", duration: 0.6});
+hoverTL.to(circle, {width: "calc(100% + 1.2em)", ease: "Elastic.easeOut(0.25)", duration: 0.5});
+hoverTL.to(circle, {width: "2em", left: "calc(100% - 2.5em)", ease: "Elastic.easeOut(0.4)", duration: 0.6});
 
 link.addEventListener("mouseenter", ()=>{
   hoverTL.play();
@@ -15,10 +32,6 @@ link.addEventListener("mouseenter", ()=>{
 link.addEventListener("mouseleave", ()=>{
   hoverTL.reverse();
 });
-
-
-
-
 
 $(document).ready(function(){
     $('.feedback__group').slick({
@@ -38,6 +51,17 @@ $(document).ready(function(){
     });
     
 });
+
+//Меню бургер
+const iconMenu = document.querySelector('.menu_icon');
+
+if(iconMenu){
+    const menuBody = document.querySelector('.navigation');
+    iconMenu.addEventListener("click", function (e){
+        iconMenu.classList.toggle('menu_icon_active');
+        menuBody.classList.toggle('navigation_active');
+    });
+}
 
 
 window.addEventListener('DOMContentLoaded', function(){

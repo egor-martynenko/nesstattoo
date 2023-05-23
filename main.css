@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap");
-* {
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
-  letter-spacing: 0.1rem;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   --white: #fff;
   --black: #111;
-  --pink: #e701dd;
+  --gold: #FFC225;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
 }
 
 body {
@@ -37,7 +38,7 @@ body {
 
 .title {
   text-align: center;
-  color: #FFFFFF;
+  color: var(--white);
   font-weight: 300;
   font-size: 45px;
   line-height: 66px;
@@ -52,50 +53,52 @@ body {
   height: 37px;
 }
 .contacts_links svg:first-child path {
-  fill: #FFFFFF;
+  fill: var(--white);
 }
 .contacts_links svg:first-child:hover {
   padding-bottom: 5px;
-  border-bottom: 2px solid #FFC225;
+  border-bottom: 2px solid var(--gold);
 }
 .contacts_links svg:nth-child(2n) {
   width: 42px;
   height: 37px;
 }
 .contacts_links svg:nth-child(2n) path {
-  fill: #FFFFFF;
+  fill: var(--white);
 }
 .contacts_links svg:nth-child(2n):hover {
   padding-bottom: 5px;
-  border-bottom: 2px solid #FFC225;
+  border-bottom: 2px solid var(--gold);
 }
 .contacts_links svg:nth-child(3n) {
   width: 35px;
   height: 35px;
 }
 .contacts_links svg:nth-child(3n) path {
-  fill: #FFFFFF;
+  fill: var(--white);
 }
 .contacts_links svg:nth-child(3n):hover {
   padding-bottom: 5px;
-  border-bottom: 2px solid #FFC225;
+  border-bottom: 2px solid var(--gold);
+}
+
+.menu_icon {
+  display: none;
 }
 
 .header {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .header_logo {
-  color: #FFFFFF;
+  color: var(--white);
   font-weight: 400;
   font-size: 30px;
-  text-decoration: none;
 }
 .header_logo span {
-  color: #FFC225;
+  color: var(--gold);
 }
 .header_logo__title {
   font-weight: 200;
@@ -105,14 +108,15 @@ body {
 .header_contacts {
   transition: 0.5s all;
   position: relative;
-  fill: #FFFFFF;
-  color: #FFFFFF;
+  fill: var(--white);
+  color: var(--white);
   display: flex;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
 }
 .header_contacts__phone {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 25px;
 }
@@ -122,8 +126,8 @@ body {
   padding-right: 15px;
 }
 .header_contacts:hover {
-  fill: #FFC225;
-  color: #FFC225;
+  fill: var(--gold);
+  color: var(--gold);
 }
 .header_contacts__list {
   position: absolute;
@@ -144,7 +148,7 @@ body {
 .header_contacts__item a {
   font-weight: 600;
   font-size: 20px;
-  color: #FFFFFF;
+  color: var(--white);
   text-decoration: none;
 }
 .header_contacts__num {
@@ -175,31 +179,31 @@ body {
 }
 .navigation__item {
   margin-bottom: 40px;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 28px;
 }
 .navigation__link {
-  color: #FFFFFF;
+  color: var(--white);
   text-decoration: none;
   padding-bottom: 5px;
   border-bottom: none;
-  transition: 0.5s border-bottom;
+  transition: 0.5s all;
 }
 .navigation__link:hover {
-  border-bottom: 2px solid #FFC225;
+  border-bottom: 2px solid var(--gold);
 }
 
 .social__item {
   margin: 20px 0;
 }
 .social__svg {
-  fill: #FFFFFF;
+  fill: var(--white);
   width: 40px;
   height: 40px;
   transition: 0.5s all;
 }
 .social__svg:hover {
-  fill: #FFC225;
+  fill: var(--gold);
 }
 
 .contact {
@@ -209,7 +213,7 @@ body {
   align-items: center;
 }
 .contact_adres {
-  color: #FFFFFF;
+  color: var(--white);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -223,17 +227,6 @@ body {
   font-size: 20px;
 }
 
-.persona {
-  color: #FFC225;
-}
-
-.wrapper {
-  padding: 0 20px;
-  margin: 0 auto;
-  display: grid;
-  place-items: center;
-}
-
 .main_bottom {
   position: absolute;
   width: 100%;
@@ -243,33 +236,26 @@ body {
   background: linear-gradient(180deg, rgba(114, 136, 172, 0) 0%, rgba(6, 9, 14, 0.81) 45.96%, #06090E 71.08%, #06090E 100%);
 }
 
-:root {
-  --white: #fff;
-  --black: #111;
-  --pink: #FFC225;
-  scroll-behavior: smooth;
-}
-
 .button {
   padding: 0 20px;
   margin: 0 auto;
   place-items: center;
   position: absolute;
-  bottom: 25px;
+  bottom: 50px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-45%);
 }
 
 .bottom_row {
   width: 70px;
   height: 24px;
-  fill: white;
+  fill: var(--white);
 }
 
 .link {
   font-size: 2rem;
   font-weight: 600;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   position: relative;
 }
@@ -282,17 +268,25 @@ body {
 .link i {
   margin-left: 0.5em;
 }
-.link .pink {
-  width: 2em;
-  height: 2em;
+.link .circle {
+  width: 7em;
+  height: 0.1em;
   border-radius: 2em;
-  background-color: var(--pink);
+  background-color: var(--gold);
   position: absolute;
-  top: 50%;
+  top: 110%;
   transform: translatey(-50%);
-  left: -0.5em;
+  left: 0.15em;
 }
 
+.master_title {
+  text-align: center;
+  color: var(--white);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 66px;
+  margin-top: 50px;
+}
 .master_content {
   position: relative;
 }
@@ -331,6 +325,16 @@ body {
   color: #FFC225;
 }
 
+.portfolio_title {
+  text-align: center;
+  color: var(--white);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 66px;
+  margin-top: 50px;
+  margin-top: 200px;
+}
+
 .content .info {
   margin: 0 auto;
   min-height: 580px;
@@ -350,13 +354,13 @@ body {
 }
 
 .content .info-header-tab {
-  color: #FFFFFF;
+  color: var(--white);
   font-weight: 300;
   font-size: 30px;
   cursor: pointer;
 }
 .content .info-header-tab:hover {
-  border-bottom: 2px solid #FFC225;
+  border-bottom: 2px solid var(--gold);
 }
 
 .content .info-header-tab:after {
@@ -373,6 +377,7 @@ body {
 
 .content .info-tabcontent {
   width: 100%;
+  height: 400px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -388,7 +393,7 @@ body {
 .content .info-tabcontent .description-title {
   font-size: 34px;
   font-weight: 300;
-  color: #FFFFFF;
+  color: var(--white);
 }
 
 .content .info-tabcontent .description-title:after {
@@ -396,7 +401,7 @@ body {
   display: block;
   width: 20%;
   height: 3px;
-  background-color: #FFC225;
+  background-color: var(--gold);
   margin-top: 4px;
 }
 
@@ -438,8 +443,8 @@ body {
   position: relative;
   height: 200px;
   z-index: 2;
-  border-top: 2px solid #FFC225;
-  border-bottom: 2px solid #FFC225;
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
   transform: translateY(-80px);
 }
 .decor img {
@@ -475,9 +480,24 @@ body {
   background-color: #06090E;
 }
 
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .feedback {
-  color: #FFFFFF;
+  color: var(--white);
   margin-top: -100px;
+}
+.feedback_title {
+  text-align: center;
+  color: var(--white);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 66px;
+  margin-top: 50px;
+  margin-top: 150px;
 }
 .feedback__group {
   list-style-type: none;
@@ -513,7 +533,7 @@ body {
   align-items: center;
 }
 .feedback__link {
-  color: #FFFFFF;
+  color: var(--white);
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -583,7 +603,7 @@ ul.slick-dots {
   cursor: pointer;
   border: 0;
   outline: none;
-  background: #FFFFFF;
+  background: var(--white);
   border-radius: 50%;
   transition: 0.5s all;
 }
@@ -599,6 +619,15 @@ ul.slick-dots {
   position: relative;
   margin-top: -30px;
 }
+.contacts_title {
+  text-align: center;
+  color: var(--white);
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 66px;
+  margin-top: 50px;
+  margin-top: 150px;
+}
 .contacts__info {
   padding: 100px 25px;
   position: absolute;
@@ -609,13 +638,13 @@ ul.slick-dots {
   background-color: rgba(5, 8, 13, 0.85);
 }
 .contacts__info_title {
-  color: #FFC225;
+  color: var(--gold);
   font-weight: 300;
   font-size: 20px;
   margin-top: 40px;
 }
-.contacts__adres {
-  color: #FFFFFF;
+.contacts__adres, .contacts__phone, .contacts__schedule, .contacts__email {
+  color: var(--white);
   width: 100%;
   font-weight: 200;
   font-size: 20px;
@@ -624,4 +653,93 @@ ul.slick-dots {
 }
 .contacts__item {
   margin-top: 25px;
+}
+
+a.contacts__phone span {
+  font-family: "Montserrat", sans-serif;
+}
+
+a.contacts__schedule span span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+a.contacts__adres span span {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 992px) {
+  body {
+    overflow: hidden;
+  }
+  .header_logo {
+    z-index: 3;
+  }
+  .header_contacts {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .menu_icon::before,
+  .menu_icon::after,
+  .menu_icon span {
+    position: absolute;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: var(--white);
+  }
+  .menu_icon::before,
+  .menu_icon::after {
+    content: "";
+  }
+  .menu_icon::before {
+    top: 0;
+  }
+  .menu_icon::after {
+    bottom: 0;
+  }
+  .menu_icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -20%);
+  }
+  .header_logo {
+    font-weight: 400;
+    font-size: 30px;
+  }
+  .header_logo__title {
+    font-size: 10px;
+  }
+  .navigation {
+    position: fixed;
+    left: -100%;
+  }
+  .navigation_active {
+    transform: translate(0px, 0px);
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 25px;
+    padding-top: 225px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 8, 13, 0.95);
+    transition: all 0.3s;
+  }
+  .master_photo-persona,
+  .master_photo-master {
+    width: 75%;
+  }
+  .info-header {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */

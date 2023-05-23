@@ -1,33 +1,38 @@
+@import "_mixins.scss";
+
+.menu_icon{
+    display: none;
+}
+
 .header{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     &_logo{
-        color: $txt_col;
+        color: var(--white);
         font-weight: 400;
         font-size: 30px;
-        text-decoration: none;
         span{
-            color: $gold;
+            color: var(--gold);
         }
         &__title {
             font-weight: 200;
             font-size: 15px;
             margin: 0px ;
         }  
-    }  
+    }
     &_contacts{
         transition: 0.5s all;
         position: relative;
-        fill: $txt_col;
-        color: $txt_col;
+        fill: var(--white);
+        color: var(--white);
         display: flex;
         align-items: center;
         flex-direction: column;
         cursor: pointer;
         &__phone {
+            font-family: 'Montserrat', sans-serif;
             font-weight: 400;
             font-size: 25px;
         }
@@ -37,8 +42,8 @@
             padding-right: 15px;
         }
         &:hover {
-            fill: $gold;
-            color: $gold;
+            fill: var(--gold);
+            color: var(--gold);
         }  
         &__list {
             position: absolute;
@@ -58,7 +63,7 @@
             a{
                 font-weight: 600;
                 font-size: 20px;
-                color: $txt_col;
+                color: var(--white);
                 text-decoration: none;
             }      
         }    
@@ -91,17 +96,17 @@
     }     
     &__item{
         margin-bottom: 40px;
-        font-weight: 400;
-        font-size: 20px;
+        font-weight: 300;
+        font-size: 28px;
     }       
     &__link {
-        color: $txt_col;
+        color: var(--white);
         text-decoration: none;
         padding-bottom: 5px;
         border-bottom: none;
-        transition: 0.5s border-bottom;
+        transition: 0.5s all;
         &:hover{
-            border-bottom: 2px solid $gold;
+            border-bottom: 2px solid var(--gold);
         }      
     }  
 }
@@ -111,12 +116,12 @@
         margin: 20px 0;
     }
     &__svg {
-        fill: $txt_col;
+        fill: var(--white);
         width: 40px;
         height: 40px;
         transition: 0.5s all;
         &:hover{
-            fill: $gold;
+            fill: var(--gold);
         }
     }
     
@@ -127,7 +132,7 @@
     justify-content: space-between;
     align-items: center;
     &_adres {
-        color: $txt_col;
+        color: var(--white);
         text-decoration: none;
         display: flex;
         flex-direction: column;
@@ -142,19 +147,6 @@
     }
 }
     
-.persona {
-    color: $gold;
-}
-
-
-  
-.wrapper {
-    padding: 0 20px;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
-    
-}
 .main_bottom {
     position: absolute;
     width: 100%;
@@ -164,34 +156,25 @@
     background: linear-gradient(180deg, rgba(114, 136, 172, 0) 0%, rgba(6, 9, 14, 0.81) 45.96%, #06090E 71.08%, #06090E 100%);
 }
   
-
-:root {
-    --white: #fff;
-    --black: #111;
-    --pink: #FFC225;
-    scroll-behavior: smooth;
-
-}
-  
 .button {
     padding: 0 20px;
     margin: 0 auto;
     place-items: center;
     position: absolute;
-    bottom: 25px;
+    bottom: 50px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-45%);
 }
 
 .bottom_row{
     width: 70px; 
     height: 24px;
-    fill: white;
+    fill: var(--white);
 }
 .link {
     font-size: 2rem;
     font-weight: 600;
-    color: white;
+    color: var(--white);
     text-decoration: none;
     position: relative;
 
@@ -207,14 +190,14 @@
       margin-left: 0.5em;
     }
     
-    .pink {
-      width: 2em;
-      height: 2em;
+    .circle{
+      width: 7em;
+      height: 0.1em;
       border-radius: 2em;
-      background-color: var(--pink);
+      background-color: var(--gold);
       position: absolute;
-      top: 50%;
+      top: 110%;
       transform: translatey(-50%);
-      left: -0.5em;
+      left: 0.15em;
     }
   }

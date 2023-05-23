@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "_mixins.scss";
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     letter-spacing: .1rem;
 }
-    
-:root {
-    --white: #fff;
-    --black: #111;
-    --pink: #e701dd;
-  }
-
-$txt_col: #FFFFFF;
-$gold: #FFC225;
 
 body {
     background-color: #06090E;
@@ -41,7 +35,7 @@ body {
 
 .title {
     text-align: center;
-    color: $txt_col;
+    color: var(--white);
     font-weight: 300;
     font-size: 45px;
     line-height: 66px;
@@ -56,36 +50,36 @@ body {
         width: 35px;
         height: 37px;
         & path{
-            fill: $txt_col;
+            fill: var(--white);
         }
     } 
     & svg:first-child:hover{
         padding-bottom: 5px;
-        border-bottom: 2px solid $gold;
+        border-bottom: 2px solid var(--gold);
     }
 
     & svg:nth-child(2n){
         width: 42px;
         height: 37px;
         & path{
-            fill: $txt_col;
+            fill: var(--white);
         }
     }
     & svg:nth-child(2n):hover{
         padding-bottom: 5px;
-        border-bottom: 2px solid $gold;
+        border-bottom: 2px solid var(--gold);
     }
     
     & svg:nth-child(3n){
         width: 35px;
         height: 35px;
         & path{
-            fill: $txt_col;
+            fill: var(--white);
         }
     }
     & svg:nth-child(3n):hover{
         padding-bottom: 5px;
-        border-bottom: 2px solid $gold;
+        border-bottom: 2px solid var(--gold);
     }
     
 }

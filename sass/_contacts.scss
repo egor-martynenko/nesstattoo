@@ -1,4 +1,10 @@
+@import "_mixins.scss";
+
 .contacts{
+    &_title{
+        @include title;
+        margin-top: 150px;
+    }
     position: relative;
     margin-top: -30px;
     &__info{
@@ -10,22 +16,32 @@
         left: 0;
         background-color: rgba(5,8,13,.85);
         &_title{
-            color: $gold;
+            color: var(--gold);
             font-weight: 300;
             font-size: 20px;
             margin-top: 40px;
         }     
     }
-    &__adres{
-        color: $txt_col;
+    &__adres, &__phone, &__schedule, &__email{
+        color: var(--white);
         width:100%;
         font-weight: 200;
         font-size: 20px;
         text-decoration: none;
         line-height: 1.5;
-    }
+    }    
     &__item{
         margin-top: 25px;
     } 
 }
-    
+   
+a.contacts__phone span {
+    font-family: 'Montserrat', sans-serif;
+}
+a.contacts__schedule span span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+a.contacts__adres span span {
+    font-family: 'Montserrat', sans-serif;
+}

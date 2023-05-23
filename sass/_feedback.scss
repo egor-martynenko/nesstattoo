@@ -1,5 +1,11 @@
+@import "_mixins.scss";
+
 .feedback {
-    color: $txt_col;
+    &_title{
+        @include title;
+        margin-top: 150px;
+    }
+    color: var(--white);
     margin-top: -100px;
     &__group{
         list-style-type: none;
@@ -36,7 +42,7 @@
             
     } 
     &__link{
-        color: $txt_col;
+        color: var(--white);
         text-decoration: none;
         display: flex;
         flex-direction: column;
@@ -107,7 +113,7 @@ ul.slick-dots{
     cursor: pointer;
     border: 0;
     outline: none;
-    background: $txt_col;
+    background: var(--white);
     border-radius: 50%;
     transition: 0.5s all;
     &:hover{

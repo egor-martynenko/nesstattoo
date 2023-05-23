@@ -1,4 +1,9 @@
+@import "_mixins.scss";
+
 .master{
+    &_title{
+        @include title;
+    }
     &_content{
          position: relative;
     }

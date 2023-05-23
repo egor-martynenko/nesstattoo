@@ -1,3 +1,9 @@
+@import "_mixins.scss";
+
+.portfolio_title{
+  @include title;
+  margin-top: 200px;
+}
 .content .info {
     margin: 0 auto;
     min-height: 580px;
@@ -16,12 +22,12 @@
             justify-content: space-around;
   }
   .content .info-header-tab {
-    color: $txt_col;
+    color: var(--white);
     font-weight: 300;
     font-size: 30px;
     cursor: pointer;
     &:hover{
-        border-bottom: 2px solid $gold ;
+        border-bottom: 2px solid var(--gold) ;
     }
   }
   .content .info-header-tab:after {
@@ -36,6 +42,7 @@
   }
   .content .info-tabcontent {
     width: 100%;
+    height: 400px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -49,14 +56,14 @@
   .content .info-tabcontent .description-title {
     font-size: 34px;
     font-weight: 300;
-    color: $txt_col;
+    color: var(--white);
   }
   .content .info-tabcontent .description-title:after {
     content: '';
     display: block;
     width: 20%;
     height: 3px;
-    background-color: $gold;
+    background-color: var(--gold);
     margin-top: 4px;
   }
   .content .info-tabcontent .description-text {
@@ -94,8 +101,8 @@
     position: relative;
     height: 200px;
     z-index: 2;
-    border-top: 2px solid $gold;
-    border-bottom: 2px solid $gold;
+    border-top: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
     transform: translateY(-80px);
     & img{
         width: 100%;
@@ -127,4 +134,10 @@
 }
 .small_img{
   background-color: #06090E;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
