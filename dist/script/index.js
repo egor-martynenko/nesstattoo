@@ -12,8 +12,30 @@ for(let anchor of anchors) {
       behavior: "smooth",
       block: "start"
     })
+    //При клике по корневой ссылке в бургер-меню, закрывать меню после прокрутки
+    if(iconMenu.classList.contains('menu_icon_active')) {
+        document.body.classList.remove('_lock')
+        iconMenu.classList.remove('menu_icon_active');
+        menuBody.classList.remove('navigation_active');
+    }
   })
 }
+
+//Меню бургер
+const iconMenu = document.querySelector('.menu_icon');
+const menuBody = document.querySelector('.navigation');
+
+if(iconMenu){
+    iconMenu.addEventListener("click", function (e){
+        document.body.classList.toggle('_lock')
+        iconMenu.classList.toggle('menu_icon_active');
+        menuBody.classList.toggle('navigation_active');
+    });
+}
+
+
+
+
 
 let link = document.querySelector(".link");
 let circle = document.querySelector(".circle");
@@ -41,7 +63,7 @@ $(document).ready(function(){
         dots: true,
         responsive:[
             {
-                breakpoint: 500,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 1,
                     
@@ -52,16 +74,7 @@ $(document).ready(function(){
     
 });
 
-//Меню бургер
-const iconMenu = document.querySelector('.menu_icon');
 
-if(iconMenu){
-    const menuBody = document.querySelector('.navigation');
-    iconMenu.addEventListener("click", function (e){
-        iconMenu.classList.toggle('menu_icon_active');
-        menuBody.classList.toggle('navigation_active');
-    });
-}
 
 
 window.addEventListener('DOMContentLoaded', function(){

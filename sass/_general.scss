@@ -13,6 +13,9 @@ body {
     background-color: #06090E;
     padding: 0;
     margin: 0;
+    &._lock{
+        overflow: hidden;
+    }
 }
 
 .main {
